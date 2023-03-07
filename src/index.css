@@ -12,7 +12,7 @@ body{
   background-color: rgb(220, 220, 220);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1026px) {
   body{
     margin-top: 160px;
   }
@@ -20,7 +20,7 @@ body{
 
 @media (max-width: 600px) {
   body{
-    margin-top: 150px;
+    margin-top: 120px;
   }
 }
 

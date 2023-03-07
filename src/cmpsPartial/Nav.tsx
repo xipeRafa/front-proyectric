@@ -7,7 +7,7 @@ import {useState} from 'react'
 export const Nav = ({ startLogout, status, user }) => {
 
 
-   const [menuToggle, setMenuToggle]=useState(false)
+   const [menuToggle, setMenuToggle]=useState(true)
    let location = useLocation();
 
 
@@ -19,18 +19,18 @@ export const Nav = ({ startLogout, status, user }) => {
           width="200" height="44" alt="" />
         </span>
 
-     
+      
 
         {  status !== 'not-authenticated' && location.pathname !== '/auth/login'  && location.pathname !== '/auth/register' &&<>
-          <button className='btnNav btn shadow-none' onClick={()=>setMenuToggle(!menuToggle)}>
+        <button className='btnNav btn shadow-none' onClick={()=>setMenuToggle(!menuToggle)}>
              MENU <span className="navbar-toggler-icon"></span>
          </button>
 
-          <nav className={menuToggle ? 'menuItemsTrue' : 'menuItemsFalse' }>
-            <p onClick={()=>setMenuToggle(!menuToggle)}>{localStorage.userName}</p>
+          <nav className='desk'>
+            <p>{localStorage.userName}</p>
               {
                   localStorage.userName === 'superadmin' &&
-                  <Link  to="/users"> Users </Link>
+                  <Link  to="/users"> Users</Link>
               }
               <Link  to="/productos"> Productos </Link>
               <Link  to="/categorias">Categorias</Link>
@@ -40,6 +40,28 @@ export const Nav = ({ startLogout, status, user }) => {
             </Link>
           </nav>
           </>}
+
+     
+      <div className='menuMovil'>
+        {  status !== 'not-authenticated' && location.pathname !== '/auth/login'  && location.pathname !== '/auth/register' &&<>
+       
+
+          <nav className={menuToggle ? 'menuItemsTrue' : 'menuItemsFalse' }>
+            <p>{localStorage.userName}</p>
+              {
+                  localStorage.userName === 'superadmin' &&
+                  <Link  to="/users" onClick={()=>setMenuToggle(!menuToggle)}> Users </Link>
+              }
+              <Link  to="/productos" onClick={()=>setMenuToggle(!menuToggle)}> Productos </Link>
+              <Link  to="/categorias" onClick={()=>setMenuToggle(!menuToggle)}>Categorias</Link>
+
+            <Link className="btn btn-outline-danger btn-sm h-50 mb-0" to="/auth/login" onClick={ startLogout }>
+                <i className="fas fa-sign-out-alt"></i> salir
+            </Link>
+          </nav>
+          </>}
+      </div>
+
 
     </div>
   )

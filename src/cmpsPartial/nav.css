@@ -14,6 +14,7 @@ a {
     margin-top: 10px;
     height: 24px;
     margin-bottom: 0;
+    user-select: none;
 }
 
 nav {
@@ -27,22 +28,26 @@ nav>p {
     margin-top: 10px;
     height: 24px;
     margin-bottom: 0;
-    cursor: pointer;
+    user-select: none;
 }
+
 
 .btnNav {
     display: none;
     border-color: white !important;
     color: white !important;
+    margin-top: 10px;
 }
 
-.menuItemsTrue>a {
+.menuItemsTrue>a, .menuItemsTrue>p {
     display: none;
 }
 
 
 
-
+.menuMovil{
+    display: none;
+}
 
 
 
@@ -51,6 +56,7 @@ nav>p {
     .navCSS {
         flex-direction: column;
     }
+
 }
 
 
@@ -80,4 +86,19 @@ nav>p {
     .navCSS {
         flex-direction: row;
     }
+    .desk{
+        display: none;
+    }
+    .menuMovil{
+        display: block;
+        width: 100%;
+    }
+    
+}
+.navbar-toggler-icon{
+    margin-left: 8px;
+}
+
+.br{
+    border: 1px solid red;
 }
