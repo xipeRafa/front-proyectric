@@ -1,0 +1,83 @@
+.navCSS {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+a {
+    margin-left: 20px;
+    color: white !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 10px;
+    height: 24px;
+    margin-bottom: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+nav>p {
+    color: gray;
+    margin-top: 10px;
+    height: 24px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.btnNav {
+    display: none;
+    border-color: white !important;
+    color: white !important;
+}
+
+.menuItemsTrue>a {
+    display: none;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1026px) {
+    .navCSS {
+        flex-direction: column;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        width: 60%;
+        margin-left: 20%;
+        text-align: center;
+    }
+
+    nav>button {
+        width: 100px;
+    }
+
+    .btnNav {
+        display: block;
+    }
+
+    a {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .navCSS {
+        flex-direction: row;
+    }
+}
