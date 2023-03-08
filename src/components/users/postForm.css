@@ -7,6 +7,7 @@
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
     padding: 5%;
     background: #899bb0;
+    margin-bottom: 290%;
 }
 
 .login-form-1 h3 {
@@ -78,37 +79,30 @@ a:hover {
 
 .login-containerUser {
     width: 100%;
-    height: 120%;
     position: fixed;
-    top: -30%!important; left: 333px;
-    padding-top: 18%;
-    background-color: #000000d1;
+    padding-top: 300px;
+    background-color: #000000be; 
 }
+
 .fix{
     position: fixed;
-    top: -30%!important; left: 0%!important;
+    top: -260px!important; 
     transition: .8s;
 }
 
 .fixModal{
     position: fixed;
-    top: -160%!important; left: 0%!important; 
+    top: -2000px!important; 
     transition: .6s;
 }
-
-@media (max-width: 1000px) {
-    .fix{
-        position: fixed;
-        top: -20%!important; left: 0%!important; 
-        transition: .6s;
-    }
-    .login-containerUser {
- 
-        padding-top: 38%;
-    }
-  }
 
 .editButton{
     background-color: #fff;
     color: #cc0030;
+}
+
+@media (min-width: 666px) {
+    .fix{
+        top: -400px!important; 
+    }
 }
