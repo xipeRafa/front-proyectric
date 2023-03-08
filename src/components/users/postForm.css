@@ -7,7 +7,7 @@
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
     padding: 5%;
     background: #899bb0;
-    margin-bottom: 290%;
+    margin-bottom: 280%;
 }
 
 .login-form-1 h3 {
@@ -81,7 +81,8 @@ a:hover {
     width: 100%;
     position: fixed;
     padding-top: 300px;
-    background-color: #000000be; 
+/*     background-color: #000000be;  */
+background-color: red;
 }
 
 .fix{
