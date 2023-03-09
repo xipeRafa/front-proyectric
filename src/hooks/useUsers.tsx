@@ -203,13 +203,14 @@ export const useUsers = () => {
 
 
 
-  const deleteUser = async (usuario: Object) => {
+  const deleteUser = async (usuario) => {
+    console.log('usuario :>> ', usuario);
       try {
           const { usuarios } = deleteExplorer(usuario.uid, usersLSArr, fallUsersArr)
           dispatch(userDeleteView({usuarios:usuarios})) 
-
-          await axiosApi.delete(`/usuarios/${usuario.uid}`) 
+          
           dispatch(somethingWentRigth(['Usuario fue Borrado', usuario.correo + ' ya no existe ', 'success']))
+          await axiosApi.delete(`/usuarios/${usuario.uid}`) 
           UpDateDB()
       } catch (error) {
           console.log('deleteUser error :>>', error)
