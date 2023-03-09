@@ -8,7 +8,7 @@ export const Productos = () => {
         display: "block",
         border: "2px solid salmon",
         padding: "10px",
-        width: "92%",
+        width: "94%",
         marginLeft:"3%",
         marginBottom:"10px",
         backgroundColor:"lightgray"
@@ -35,7 +35,7 @@ export const Productos = () => {
     <div>
         <h3 style={{marginLeft:"50px"}}>Proyectos</h3>
 
-        <input type="search" className='mx-5 my-2' placeholder='Buscar Productos' onChange={(e)=> productosFinder(e.target.value)}/>
+        <input type="search" className='mx-5 my-2' placeholder='Buscar Proyectos' onChange={(e)=> productosFinder(e.target.value)}/>
 
         {productos.productos?.length < 2 ? <button name=' ' className='btn btn-info' onClick={(e)=> productosFinder(e)}>Ver todos los Proyectos</button> : ''} 
 
