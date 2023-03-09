@@ -9,7 +9,7 @@ export const Productos = () => {
         border: "2px solid salmon",
         padding: "10px",
         width: "92%",
-        marginLeft:"50px",
+        marginLeft:"3%",
         marginBottom:"10px",
         backgroundColor:"lightgray"
     }
