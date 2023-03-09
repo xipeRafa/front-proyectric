@@ -9,7 +9,7 @@ export const Users = () => {
         display: "block",
         border: "2px solid salmon",
         padding: "10px",
-        width: "400px",
+        width: "94%",
         marginLeft: "50px",
         marginBottom: "10px",
         backgroundColor: "lightgray"
@@ -99,9 +99,9 @@ export const Users = () => {
                     <p>Mail:   {el.correo}</p>
 
                     <p>Role:   {el.rol}</p>
-                    <p>id:     {el.uid}</p>
+                    <p>Id:     {el.uid}</p>
 
-                    <p>State:  {el.estado ? ' true' : ' false'}</p>
+                    <p>Estado:  {el.estado ? ' true' : ' false'}</p>
                     <p>Google: {el.google ? ' true' : ' false'}</p>
 
                     <img src={el.img} width='100px' />

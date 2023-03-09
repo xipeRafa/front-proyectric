@@ -8,6 +8,7 @@ import { useAuth } from '../hooks/useAuth';
 
 import Swal from 'sweetalert2';
 import { Nav } from '../cmpsPartial';
+import Compras from '../components/Compras';
 
 
 const AppRouter = () => {
@@ -54,6 +55,9 @@ const AppRouter = () => {
                 <Route path="/categorias" element={<Categorias />} />
                 <Route path="/users"      element={<Users      />} />
                 <Route path="/productos"  element={<Productos  />} />
+                <Route path="/compras"  element={<Compras  />} />
+
+
 
                 <Route path="/*" element={<Navigate to="/auth/login" />} /> 
             </Routes>

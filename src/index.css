@@ -162,3 +162,7 @@ a:hover {
   color: rgb(37, 34, 34);
 }
 
+button{
+  margin-right: 4px;
+  margin-bottom: 2px;
+}
