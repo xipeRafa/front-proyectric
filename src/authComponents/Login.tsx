@@ -33,7 +33,7 @@ export const Login = ({ startLogin, status }) => {
             return
         }  
 
-        startLogin({ correo: loginEmail, password: loginPassword });
+        startLogin({ correo: loginEmail, password: loginPassword.toLowerCase()});
          
     }
 
