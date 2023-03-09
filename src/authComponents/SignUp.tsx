@@ -39,7 +39,7 @@ export const SignUp = ({ startRegister, status }) => {
             return;
         }  
 
-        startRegister({ nombre: registerName, correo: registerEmail, password: registerPassword.toLowerCase() });
+        startRegister({ nombre: registerName.toLowerCase(), correo: registerEmail.toLowerCase(), password: registerPassword.toLowerCase() });
         
     }
 

@@ -22,7 +22,7 @@ export const Login = ({ startLogin, status }) => {
 
     const { loginEmail, loginPassword, onInputChange: onLoginInputChange } = useForm(loginFormFields);
 
-
+   
 
     
     const loginSubmit = (event: any) => {
@@ -33,7 +33,7 @@ export const Login = ({ startLogin, status }) => {
             return
         }  
 
-        startLogin({ correo: loginEmail, password: loginPassword.toLowerCase()});
+        startLogin({ correo: loginEmail.toLowerCase(), password: loginPassword.toLowerCase()});
          
     }
 
